@@ -1,0 +1,57 @@
+.headerContainer {
+  border-bottom: 1px solid var(--grey-800);
+  height: 5rem;
+}
+
+.headerContent {
+  max-width: 1120px;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+
+  nav {
+    margin-left: 5rem;
+    height: inherit;
+
+    a {
+      display: inline-block;
+      height: 5rem;
+      line-height: 5rem;
+      padding: 0 0.5rem;
+      color: var(--gray-300);
+
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--gray-100);
+      }
+
+      & + a {
+        margin-left: 2rem;
+      }
+
+      &.active {
+        color: var(--gray-100);
+        font-weight: 700;
+        position: relative;
+
+        &::after {
+          content: '';
+          height: 3px;
+          width: 100%;
+          border-radius: 3px 3px 0 0;
+          background: var(--yellow-500);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  > button {
+    margin-left: auto;
+  }
+}
