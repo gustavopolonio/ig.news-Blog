@@ -28,5 +28,39 @@
     p {
       margin-top: 1.5rem;
     }
+    
+    &.previewContent {
+      background: linear-gradient(180deg, var(--gray-100) 55%, rgba(225, 225, 230, 0) 123.54%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+}
+
+.subscribeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto 2rem;
+  width: 100%;
+  max-width: 728px;
+  height: 5rem;
+  background: var(--gray-700);
+  border-radius: 100px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  span {
+    display: contents;
+    color: var(--yellow-500);
   }
 }
