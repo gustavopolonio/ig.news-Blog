@@ -15,6 +15,8 @@
 
 Ig news is a blog about the React world. It contains news about this framework which only the subscribers can read.
 
+The [Stripe API](https://stripe.com/docs/api) was used to handle with the payments and signatures. The blog posts are created at [Prismic](https://prismic.io/).
+
 The project is part of my personal portfolio, so I would appreciate if you provide me any feedback about the ideia, code, structure or anything you could report 
 to make me a better developer.
 
@@ -22,7 +24,7 @@ Feel free to use the Ig news as you wish, either to study or make improvementes!
 
 # :rocket: Features
 - Create an account with your Github.
-- Subscribe for US$ 9,90 per month to have access to all publications.
+- Subscribe for US$ 9,90 per month to have access to all publications. Tip: to subscribe with a test card follow the instructions on [Stripe Docs](https://stripe.com/docs/testing)
 - See all the news available on the Posts tab.
 
 # :construction_worker: How to Use
