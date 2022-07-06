@@ -5,7 +5,11 @@
 </p>
 
 # :pushpin: Table of Contents
-
+* [About this Project](#book-about-this-project)
+* [Features](#rocket-features)
+* [How to Use](#construction_worker-how-to-use)
+* [Technologies](#computer-technologies)
+* [License](#closed_book-license)
 
 # :book: About this Project
 
@@ -39,7 +43,7 @@ $ yarn install
 
 ```
 
-Create your enviroment variables based on the examples of `.env.example`
+Create your environment variables based on the examples of `.env.example`
 
 ```bash
 cp .env.example .env
@@ -47,7 +51,7 @@ cp .env.example .env
 
 After copying the examples, make sure to fill the variables with new values.
 
-** Start the application in a development environment **
+**Start the application in a development environment**
 
 ```bash
 yarn dev
