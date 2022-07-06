@@ -17,6 +17,8 @@ Ig news is a blog about the React world. It contains news about this framework w
 
 The [Stripe API](https://stripe.com/docs/api) was used to handle with the payments and signatures. The blog posts are created at [Prismic](https://prismic.io/).
 
+You can check this project live [Clicking here!](https://ig-news-blog.vercel.app/)
+
 The project is part of my personal portfolio, so I would appreciate if you provide me any feedback about the ideia, code, structure or anything you could report 
 to make me a better developer.
 
