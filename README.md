@@ -15,7 +15,7 @@
 
 Ig news is a blog about the React world. It contains news about this framework which only the subscribers can read.
 
-The [Stripe API](https://stripe.com/docs/api) was used to handle with the payments and signatures. The blog posts are created at [Prismic](https://prismic.io/).
+The [Stripe API](https://stripe.com/docs/api) was used to handle with the payments and signatures. The blog posts are created at [Prismic](https://prismic.io/). Deploy made at [Vercel](https://vercel.com/).
 
 You can check this project live [Clicking here!](https://ig-news-blog.vercel.app/)
 
@@ -72,6 +72,7 @@ yarn dev
 * [FaunaDB](https://fauna.com/)
 * [Prismic](https://prismic.io/)
 * [Stripe](https://stripe.com/br)
+* [Vercel](https://vercel.com/)
 
 # :closed_book: License
 
