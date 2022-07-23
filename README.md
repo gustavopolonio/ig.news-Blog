@@ -5,11 +5,19 @@
 </p>
 
 # :pushpin: Table of Contents
-
+* [About this Project](#book-about-this-project)
+* [Features](#rocket-features)
+* [How to Use](#construction_worker-how-to-use)
+* [Technologies](#computer-technologies)
+* [License](#closed_book-license)
 
 # :book: About this Project
 
 Ig news is a blog about the React world. It contains news about this framework which only the subscribers can read.
+
+The [Stripe API](https://stripe.com/docs/api) was used to handle with the payments and signatures. The blog posts are created at [Prismic](https://prismic.io/). Deploy made at [Vercel](https://vercel.com/).
+
+You can check this project live [Clicking here!](https://ig-news-blog.vercel.app/)
 
 The project is part of my personal portfolio, so I would appreciate if you provide me any feedback about the ideia, code, structure or anything you could report 
 to make me a better developer.
@@ -18,7 +26,7 @@ Feel free to use the Ig news as you wish, either to study or make improvementes!
 
 # :rocket: Features
 - Create an account with your Github.
-- Subscribe for US$ 9,90 per month to have access to all publications.
+- Subscribe for US$ 9,90 per month to have access to all publications. Tip: to subscribe with a test card follow the instructions on [Stripe Docs](https://stripe.com/docs/testing)
 - See all the news available on the Posts tab.
 
 # :construction_worker: How to Use
@@ -39,7 +47,7 @@ $ yarn install
 
 ```
 
-Create your enviroment variables based on the examples of `.env.example`
+Create your environment variables based on the examples of `.env.example`
 
 ```bash
 cp .env.example .env
@@ -47,7 +55,7 @@ cp .env.example .env
 
 After copying the examples, make sure to fill the variables with new values.
 
-** Start the application in a development environment **
+**Start the application in a development environment**
 
 ```bash
 yarn dev
@@ -64,6 +72,7 @@ yarn dev
 * [FaunaDB](https://fauna.com/)
 * [Prismic](https://prismic.io/)
 * [Stripe](https://stripe.com/br)
+* [Vercel](https://vercel.com/)
 
 # :closed_book: License
 
