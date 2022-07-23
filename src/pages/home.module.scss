@@ -44,3 +44,29 @@
     margin-top: 2.5rem;
   } 
 }
+
+@media (max-width: 1024px) {
+  .contentContainer {
+    .hero {
+      max-width: 450px;
+    }
+
+    & > img {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .contentContainer {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    & > img {
+      position: absolute;
+      z-index: -1;
+      opacity: 0.1;
+    }
+  }
+}

@@ -15,6 +15,10 @@
     margin-left: 5rem;
     height: inherit;
 
+    .menuHamburguerButton {
+      display: none;
+    }
+
     a {
       display: inline-block;
       height: 5rem;
@@ -53,5 +57,67 @@
 
   > button {
     margin-left: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .headerContent {
+    justify-content: space-between;
+
+    nav {
+      order: -1;
+      margin-left: 0;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .menuHamburguerButton {
+        display: block;
+        background: transparent;
+        border: none;
+        color: white;
+        width: 20px;
+        height: 20px;
+
+        > svg {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      a {
+        // display: none;
+        // opacity: 0;
+        position: absolute;
+        height: 3rem;
+        line-height: 3rem;
+        width: 100%;
+        
+        & + a {
+          margin-left: 0;
+        }
+
+        &.active {
+          position: absolute;
+
+          &::after {
+            content: none;
+          }
+        }
+
+        &:nth-of-type(1) {
+          top: 100%;
+        }
+
+        &:nth-of-type(2) {
+          top: 200%;
+        }
+      }
+    }
+
+    > button {
+      display: none;
+    }
+
   }
 }
