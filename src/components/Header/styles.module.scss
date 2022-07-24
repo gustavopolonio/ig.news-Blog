@@ -64,12 +64,21 @@
   .headerContent {
     justify-content: space-between;
 
+    > img {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      top: 6.5rem;
+      opacity: 0.6;
+    }
+
     nav {
-      order: -1;
       margin-left: 0;
       display: flex;
       align-items: center;
       position: relative;
+
+      transition: .2s;
 
       .menuHamburguerButton {
         display: block;
@@ -86,12 +95,13 @@
       }
 
       a {
-        // display: none;
-        // opacity: 0;
+        display: none;
+        opacity: 0;
         position: absolute;
         height: 3rem;
         line-height: 3rem;
         width: 100%;
+        left: 0;
         
         & + a {
           margin-left: 0;
@@ -110,14 +120,48 @@
         }
 
         &:nth-of-type(2) {
-          top: 200%;
+          top: 184%;
+        }
+      }
+
+      &.menuHamburguerOpen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 32%;
+        height: 50px;
+        background-color: var(--gray-700);
+        z-index: 2;
+
+        .menuHamburguerButton {
+          margin-left: auto;
+          margin-right: 16px;
+        }
+
+        > a {
+          display: block;
+          opacity: 1;
+          background-color: var(--gray-700);
+          padding-left: 2rem;
         }
       }
     }
 
-    > button {
-      display: none;
+    .overlayBackground {
+      display: unset !important;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
     }
+  }
+}
 
+@media (max-width: 480px) {
+  .headerContent nav a:nth-of-type(2) {
+    top: 178%;
   }
 }

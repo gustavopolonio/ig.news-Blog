@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { SignInButton } from '../SignInButton'
 import { ActiveLink } from '../ActiveLink'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { IoCloseSharp } from 'react-icons/io5'
 
 import styles from './styles.module.scss'
 
@@ -9,7 +10,7 @@ export function Header() {
   const [isMenuHamburguerOpen, setIsMenuHamburguerOpen] = useState(false)
 
   function toggleMenuHamburguer() {
-    setIsMenuHamburguerOpen(true)
+    isMenuHamburguerOpen ? setIsMenuHamburguerOpen(false) : setIsMenuHamburguerOpen(true)
   }
 
   return (
@@ -17,22 +18,29 @@ export function Header() {
       <div className={styles.headerContent}>
         <img src="/images/logo.svg" alt="ig news" />
         
-        <nav>
+        <nav className={isMenuHamburguerOpen ? styles.menuHamburguerOpen : ''}>
           <button 
             onClick={() => toggleMenuHamburguer()} 
-            className={isMenuHamburguerOpen ? 'dsa' : styles.menuHamburguerButton}
+            className={styles.menuHamburguerButton}
           >
-            <GiHamburgerMenu />
+            { isMenuHamburguerOpen ? <IoCloseSharp /> : <GiHamburgerMenu /> }
+            
           </button>
 
           <ActiveLink href="/" activeClassName={styles.active}>
-            <a>Home</a>
+            <a onClick={() => toggleMenuHamburguer()}>Home</a>
           </ActiveLink>
 
           <ActiveLink href="/posts" activeClassName={styles.active}>
-            <a>Posts</a>
+            <a onClick={() => toggleMenuHamburguer()}>Posts</a>
           </ActiveLink>
         </nav>
+
+        <div 
+          style={{ display: 'none' }}
+          className={isMenuHamburguerOpen ? styles.overlayBackground : ''} 
+          onClick={() => toggleMenuHamburguer()}
+        ></div>
 
         <SignInButton />
       </div>

@@ -64,3 +64,10 @@
     color: var(--yellow-500);
   }
 }
+
+
+@media (max-width: 720px) {
+  .post {
+    margin-top: 6rem;
+  }
+}
